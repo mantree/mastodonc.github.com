@@ -1,13 +1,4 @@
 # Person details
-bruce:
-    name: Bruce Durling
-    position: CTO & Co-founder
-    email: bruce@mastodonc.com
-    twitter: http://twitter.com/otfrom
-    image: bruce-bw.jpg
-    profile: |
-      Bruce is one of the co-founders of the London Clojurians and London Python Dojo.
-      He loves using GNU emacs to create fleets of machines running clojure.
 fran:
     name: Francine Bennett
     position: CEO & Co-founder
@@ -15,44 +6,17 @@ fran:
     twitter: http://twitter.com/SunnyETownsend
     image: fran-bw.jpg
     profile: |
-      Francine spent a number of years working for search engines, helping them to turn data into money.
+      Francine spent a number of years working for search engines, helping them to turn data into money.<p>
       She likes coffee, running, sleeping a lot, and large data sets.
-neale:
-    name: Neale Swinnerton
-    position: Lead Data Engineer
-    email:
-    twitter:
-    image: neale-bw.jpg
+bruce:
+    name: Bruce Durling
+    position: CTO & Co-founder
+    email: bruce@mastodonc.com
+    twitter: http://twitter.com/otfrom
+    image: bruce-bw.jpg
     profile: |
-      Neale juggles machines, networks, software and stats to build value from disorder.
-      Neale loves skiing and hacking away at data science problems.
-sunny:
-    name: Sunny Townsend
-    position: Data Scientist
-    email: sunny@mastodonc.com
-    twitter: http://twitter.com/SunnyETownsend
-    image: sunny-bw.jpg
-    profile: |
-      Sunny has academic roots addressing problems in ecology and public health with models and statistics.
-      She enjoys getting up hills and under water as often as possible.
-antony:
-    name: Antony Woods
-    position: UI Developer
-    email: antony@mastodonc.com
-    twitter:
-    image: antony-bw.jpg
-    profile: |
-      Antony is fascinated by visualisation and enjoys creating compelling, intuitive user interfaces.
-      He comes from the Black Country, but we don't hold that against him.
-elisabeth:
-    name: Elisabeth Weise
-    position: Delivery manager
-    email:
-    twitter:
-    image: elisabeth-bw.jpg
-    profile: |
-      Elisabeth enjoys commercialising brilliant tech ideas through agile processes.
-      She loves Babybels and likes coffee and cycling in London.
+      Bruce toiled for years writing bash and java for investment banking data systems.<p>
+      He loves using GNU emacs and finding volunteers for the London Clojurians.
 eleonore:
     name: Éléonore Mayola
     position: Data Scientist
@@ -60,8 +24,17 @@ eleonore:
     twitter:
     image: eleonore-bw.jpg
     profile: |
-      Éléonore is an Hackbright Academy alumna with a background in biomedical research.
+      Éléonore is an Hackbright Academy alumna with a background in biomedical research.<p>
       She is a co-organiser at PyLadies London and enjoys hacking on hardware.
+elisabeth:
+    name: Elisabeth Weise
+    position: Delivery manager
+    email:
+    twitter:
+    image: elisabeth-bw.jpg
+    profile: |
+      Elisabeth enjoys commercialising brilliant tech ideas through agile processes.<p>
+      She loves Babybels and likes coffee and cycling in London.
 jason:
     name: Jason Bell
     position: Data Engineer
@@ -69,7 +42,7 @@ jason:
     twitter:
     image: jason-bw.jpg
     profile: |
-      Jason is author of "Machine Learning: Hands On For Developers and Technical Professionals".
+      Jason is author of <i>Machine Learning: Hands On For Developers and Technical Professionals</i>.<p>
       He loves playing the Chapman Stick, statistics and doing interesting things with data.
 elise:
     name: Elise Huard
@@ -78,17 +51,35 @@ elise:
     twitter:
     image: elise-bw.jpg
     profile: |
-      Elise is a software veteran with a Masters in Artificial Intelligence in her back pocket.
+      Elise is a software veteran with a Masters in Artificial Intelligence in her back pocket.<p>
       She enjoys sci-fi, baking cakes and working on hard problems.
-chrish:
-    name: Chris Hall
-    position: Strategic Advisor
+sunny:
+    name: Sunny Townsend
+    position: Data Scientist
+    email: sunny@mastodonc.com
+    twitter: http://twitter.com/SunnyETownsend
+    image: sunny-bw.jpg
+    profile: |
+      Sunny has academic roots addressing problems in ecology and public health with models and statistics.<p>
+      She enjoys getting up hills and under water as often as possible.
+antony:
+    name: Antony Woods
+    position: UI Developer
+    email: antony@mastodonc.com
+    twitter:
+    image: antony-bw.jpg
+    profile: |
+      Antony is fascinated by visualisation and enjoys creating compelling, intuitive user interfaces.<p>
+      He comes from the Black Country, but he doesn't force us to hold that against him.
+christ:
+    name: Chris Taylor
+    position: Commercial Development
     email:
     twitter:
-    image: chrish-bw.png
+    image: christ-bw.png
     profile: |
-      Chris has worked in business and technology strategy for almost 20 years. Ages ago he wrote AI planning systems in Prolog and mainly remembers small programmes that ran forever and returned "No".
-      He enjoys skiing and sunshine, ideally at the same time.
+      Chris helps public and private sector organisations to get the most out of technology and work better, with a particular focus on all things environmental and local.<p>
+      Chris loves the outdoors (particularly the Thames Basin Heaths SPA) and playing the sax.
 seb:
     name: Seb Bailey
     position: Data Scientist
@@ -96,8 +87,17 @@ seb:
     twitter:
     image: seb-bw.jpg
     profile: |
-      Seb studied as a biologist. He now applies skills he developed analysing genes to data science.
+      Seb studied as a biologist. He now applies skills he developed analysing genes to data science.<p>
       He enjoys baking bread, playing guitar and retro video gaming.
+chrish:
+    name: Chris Hall
+    position: Strategic Advisor
+    email:
+    twitter:
+    image: chrish-bw.png
+    profile: |
+      Chris has worked in business and technology strategy for almost 20 years. Ages ago he wrote AI planning systems in Prolog and mainly remembers small programmes that ran forever and returned "No".<p>
+      He enjoys skiing and sunshine, ideally at the same time.
 henry:
     name: Henry Garner
     position: Associate Data Scientist
@@ -105,7 +105,7 @@ henry:
     twitter:
     image: henry-bw.jpg
     profile: |
-      Henry specialises in building data-intensive systems and is currently writing a book on data science.
+      Henry specialises in building data-intensive systems and is the author of <i>Clojure for Data Science</i>.<p>
       He likes road cycling and juggling fire, though hasn't yet combined these interests.
 chrisa:
     name: Chris Adams
@@ -114,14 +114,5 @@ chrisa:
     twitter:
     image: chrisa-bw.png
     profile: |
-      Chris is a environmentally focused product manager and UX consultant, with prior background in devops, and both front and backend development.
+      Chris is a environmentally focused product manager and UX consultant, with prior background in devops, and both front and backend development.<p>
       He loves cycling around Berlin and London (yes, really), and sharpies.
-christ:
-    name: Chris Taylor
-    position: Associate Business Development
-    email:
-    twitter:
-    image: christ-bw.png
-    profile: |
-      Chris helps public and private sector organisations to get the most out of technology and work better, with a particular focus on all things environmental and local.
-      Chris loves the outdoors (particularly the Thames Basin Heaths SPA) and playing the sax.
