@@ -1,0 +1,53 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+
+  <!-- FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700,400italic,700italic,300italic' rel='stylesheet' type='text/css'>
+  <script src="https://use.typekit.net/fmt8cbp.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <!-- END FONTS -->
+  <!-- JS -->
+  <script src="{{ "/assets/js/modernizr.custom.js" | prepend: site.baseurl }}"></script>
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>
+    $(function() {
+      $('.faq-q').on('click', function(){
+        $(this).next('.faq-a').slideToggle(100);
+      });
+    });
+  </script>
+  <script>
+  $( document ).ready(function() {
+    var myBoxes = $('.parallax');
+    $(window).scroll(function(){
+        var scrollTop = $(window).scrollTop();
+        myBoxes.each(function(){
+            var $this = $(this);
+            var scrollspeed = parseInt($this.data('scroll-speed')),
+                offset = - scrollTop / scrollspeed;
+            $this.css('transform', 'translateY(' + offset / 4.5 + 'px)');
+        });
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+    $("a[href^=#]").click(function(e) {
+      e.preventDefault();
+      var dest = $(this).attr('href');
+      $('html,body').animate({ scrollTop: $(dest).offset().top }, 'slow');
+    });
+  })
+  </script>
+  <!-- END JS -->
+
+</head>

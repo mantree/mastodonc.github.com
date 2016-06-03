@@ -1,0 +1,16 @@
+<div class="footer-wrap">
+  <footer>
+    <p>Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}.</p>
+    <p class="sociallinks">
+      {% if site.github_username %}
+        {% include icon-github.html username=site.github_username %}
+      {% endif %}
+
+      {% if site.twitter_username %}
+        {% include icon-twitter.html username=site.twitter_username %}
+      {% endif %}
+    </p>
+  </footer>
+</div>
+<script src="{{ "/assets/js/classie.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/demo1.js" | prepend: site.baseurl }}"></script>

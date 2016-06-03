@@ -1,0 +1,21 @@
+/* Font family */
+$font: 'Source Sans Pro', sans-serif;
+$font-display: 'filson-pro', sans-serif;
+
+/* Travel fonts */
+// $font: Helvetica, sans-serif;
+// $font-display: Helvetica, sans-serif;
+
+// Font sizes
+$fontsize-base: 18px;
+$fontsize-small: calc(#{$fontsize-base} - 0.25vw);
+$fontsize-normal: calc(#{$fontsize-base} + 0.25vw);
+$fontsize-large: calc(#{$fontsize-base} + 0.5vw);
+$fontsize-xlarge: calc(#{$fontsize-base} + 1vw);
+$fontsize-xxlarge: calc(#{$fontsize-base} + 2.5vw);
+$fontsize-xxxlarge: calc(#{$fontsize-base} + 5vw);
+
+// Line heights
+$lh-normal: 1.4;
+$lh-tight: 1.05;
+$lh-loose: 1.75;

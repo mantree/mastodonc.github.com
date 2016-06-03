@@ -1,0 +1,33 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #fb834e;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #6ecdc1;
+      }
+
+      .cls-3 {
+        fill: #5bbd7b;
+        opacity: 0.4;
+      }
+
+      .cls-4 {
+        fill: #94dfd6;
+        opacity: 0.35;
+      }
+    </style>
+  </defs>
+  <title>icon-phone2</title>
+  <rect class="cls-1" x="1" y="1" width="42" height="73" rx="2" ry="2"/>
+  <rect class="cls-2" x="5.07" y="7" width="34" height="53" rx="1" ry="1"/>
+  <circle class="cls-3" cx="22.63" cy="66.22" r="4"/>
+  <path class="cls-3" d="M1371.56,273.22a4,4,0,0,0-3.7,2.5,4,4,0,0,0,7.41,0A4,4,0,0,0,1371.56,273.22Z" transform="translate(-1348.93 -211)"/>
+  <path class="cls-4" d="M1387.93,219a1,1,0,0,0-1-1H1355a1,1,0,0,0-1,1v39.91Z" transform="translate(-1348.93 -211)"/>
+  <path class="cls-3" d="M1354,219v-1.33a0.89,0.89,0,0,1,1-.67h32a0.89,0.89,0,0,1,1,.67V219" transform="translate(-1348.93 -211)"/>
+</svg>

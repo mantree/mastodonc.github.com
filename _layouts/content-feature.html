@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html nav=site.data.nav %}
+
+    <section class="content-feature-wrap">
+      <div class="columns content case" style="background-image: url({{ site.baseurl }}/assets/images/{{page.bgimage}})">
+        <div class="columns-col100">
+          <h1>
+            {% if page.logo %}
+              <span><img src="{{ site.baseurl }}/assets/images/{{ page.logo }}" alt="" /></span>
+            {% endif %}
+            {{ page.title }}
+          </h1>
+          <h2>{{ page.subtitle }}</h2>
+          <section class="interlude parallax" data-scroll-speed="2">
+            <p>{{ page.lowdown }}</p>
+          </section>
+
+          {{ content }}
+
+        </div>
+      </div>
+    </section>
+
+    {% include contact.html %}
+    {% include signup.html %}
+    {% include footer.html %}
+  </body>
+</html>

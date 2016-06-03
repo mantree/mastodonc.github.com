@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="_x31_8_x5F_3d_x5F_modeling" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#51B973;}
+	.st1{fill:#5AC5B8;}
+</style>
+<g>
+	<g>
+		<g>
+			<g>
+				<g>
+					<g>
+						<rect x="23" y="3" class="st0" width="34" height="2"/>
+					</g>
+					<g>
+						<rect x="19" y="7" class="st0" width="2" height="34"/>
+					</g>
+					<g>
+						<rect x="23" y="43" class="st0" width="34" height="2"/>
+					</g>
+					<g>
+						<rect x="59" y="7" class="st0" width="2" height="34"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<rect x="7" y="19" class="st0" width="34" height="2"/>
+					</g>
+					<g>
+						<rect x="3" y="23" class="st0" width="2" height="34"/>
+					</g>
+					<g>
+						<rect x="7" y="59" class="st0" width="34" height="2"/>
+					</g>
+					<g>
+						<rect x="43" y="23" class="st0" width="2" height="34"/>
+					</g>
+				</g>
+				<g>
+					<rect x="3.5" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9708 11.9998)" class="st0" width="17" height="2"/>
+				</g>
+				<g>
+					<rect x="43.5" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6.745 40.2838)" class="st0" width="17" height="2"/>
+				</g>
+				<g>
+					<rect x="43.5" y="51" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -21.539 51.9996)" class="st0" width="17" height="2"/>
+				</g>
+				<g>
+					<rect x="3.5" y="51" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -33.2548 23.7157)" class="st0" width="17" height="2"/>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M20,8c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S22.2,8,20,8z M20,2c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2
+							S21.1,2,20,2z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M4,24c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S6.2,24,4,24z M4,18c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2
+							S5.1,18,4,18z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M4,64c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S6.2,64,4,64z M4,58c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2
+							S5.1,58,4,58z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M20,48c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S22.2,48,20,48z M20,42c-1.1,0-2,0.9-2,2s0.9,2,2,2
+							s2-0.9,2-2S21.1,42,20,42z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M44,64c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S46.2,64,44,64z M44,58c-1.1,0-2,0.9-2,2s0.9,2,2,2
+							s2-0.9,2-2S45.1,58,44,58z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M60,48c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S62.2,48,60,48z M60,42c-1.1,0-2,0.9-2,2s0.9,2,2,2
+							s2-0.9,2-2S61.1,42,60,42z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M60,8c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S62.2,8,60,8z M60,2c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2
+							S61.1,2,60,2z"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<path class="st0" d="M44,24c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S46.2,24,44,24z M44,18c-1.1,0-2,0.9-2,2s0.9,2,2,2
+							s2-0.9,2-2S45.1,18,44,18z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+		<g>
+			<rect x="31" y="27" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="23" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="39" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="35" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="51" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="47" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="55" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="11" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="7" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="31" y="15" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="35" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="39" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="23" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="27" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="15" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="11" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="7" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="55" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="51" y="31" class="st1" width="2" height="2"/>
+		</g>
+		<g>
+			<rect x="47" y="31" class="st1" width="2" height="2"/>
+		</g>
+	</g>
+</g>
+</svg>

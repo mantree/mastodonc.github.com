@@ -1,0 +1,89 @@
+// CTA (move to module)
+.cta-wrap {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.cta {
+  background-color: transparentize(white, 0.1);
+  margin: $uniunit-small 0;
+  min-height: 12em;
+
+}
+.cta-title {
+  font-family: $font-display;
+  font-weight: 400;
+  font-size: $fontsize-xlarge;
+}
+.cta:first-of-type {
+  margin-top: -75px;
+}
+.cta-home-wrap {
+  // display: table;
+  text-align: center;
+  margin: $uniunit-xlarge auto 0;
+  max-width: $maxwidth-site;
+  background-color: white;
+  box-shadow: 0 -5px 15px transparentize($brandcol5,0.975);
+}
+.cta-home {
+  width: 100%;
+  text-align: left;
+  padding: $uniunit-large $uniunit-xxlarge;
+  vertical-align: top;
+  margin-bottom: $uniunit-large;
+  @include mq(small) {
+    float: none;
+    margin: $uniunit-small auto;
+    padding: 0 $uniunit-large $uniunit-small;
+  }
+  p {
+    font-weight: 300;
+    line-height: $lh-loose;
+  }
+}
+.cta-home h1 {
+  font-family: $font;
+  color: $brandcol8;
+  font-size: $fontsize-large;
+  text-align: left;
+  text-transform: capitalize;
+  > span {
+    display: block;
+    @include aspect-ratio(1,1);
+    background-color: lighten($brandcol2, 10%);
+    padding: calc(#{$uniunit-xlarge} * 1.25);
+    text-align: center;
+    display: block;
+    float: left;
+    margin: -1em $uniunit-large 0 0;
+    border-radius: 100%;
+    @include mq(small) {
+      float: none;
+      margin: $uniunit auto;
+      padding: 0;
+    }
+  }
+  img {
+    max-width: 60%;
+    margin-top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.cta-home:nth-of-type(even) h1 > span {
+    float: right;
+    margin: -1em 0 0 $uniunit-large;
+    @include mq(small) {
+      float: none;
+      margin: $uniunit-small auto;
+    }
+
+  }
+
+// Homepage ctas
+.home .cta-wrap {
+  width: 40%;
+}
+.home .cta {
+  box-shadow: 5px 5px 0 transparentize($brandcol4, 0.75);
+}

@@ -1,0 +1,12 @@
+.interlude {
+  background-color: transparentize($brandcol3, 0.05);
+  margin-top: calc(#{$uniunit-xlarge} * -1);
+  @include mq(narrow) {
+    margin-top: calc(#{$uniunit-xxlarge} * 1.5);
+  }
+  p {
+    text-align: center;
+    font-size: $fontsize-xlarge;
+    margin-right: 0;
+  }
+}

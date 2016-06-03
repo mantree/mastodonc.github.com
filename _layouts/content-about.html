@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html nav=site.data.nav %}
+
+    <section class="wrap">
+      <div class="columns content">
+        <div class="columns-col100">
+          <h1>{{ page.title }}</h1>
+          {{ content }}
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="columns">
+        <div class="columns-col100">
+          <h1>Mastodonians</h1>
+            <ul class="grid">
+              {% for person_hash in site.data.people %}
+              {% assign person = person_hash[1] %}
+              <li class="grid-item left">
+                <h1><img src="{{ site.baseurl }}/assets/images/{{ person.image }}" alt="" />{{ person.name }}</h1>
+                <h2>{{ person.position }}</h2>
+                <p>{{ person.profile }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
+      </div>
+    </section>
+
+
+    {% include signup.html %}
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="home">
+
+    {% include header.html nav=site.data.nav %}
+    {% include home_hero.html %}
+    <section class="cta-home-products">
+      <div class="cta-home-products--wrap">
+        {% include home_products.html %}
+    </div>
+    </section>
+
+    <div class="moreclients moreclients-home">
+      <ul class="moreclients-list">
+        {% for logo in site.data.homeclients %}
+        <li class="moreclients-list-logo">
+          <img src="{{ site.baseurl }}/assets/images/{{ logo.src }}" alt="{{ logo.alt }}" />
+        </li>
+        {% endfor %}
+      </ul>
+      <p>Just a few of the organisations who use Kixi, Witan, and our data science consultancy every day.</p>
+    </div>
+    <section class="cta-home-wrap parallax" data-scroll-speed="2">
+      <h1 class="section-title">Our experience</h1>
+        {{ content }}
+    </section>
+
+    {% include signup.html %}
+    {% include footer.html %}
+
+  </body>
+
+</html>

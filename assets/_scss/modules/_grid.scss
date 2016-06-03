@@ -1,0 +1,109 @@
+
+.grid-wrap {
+  background-color: white;
+  max-width: $maxwidth-site;
+  margin-bottom: $uniunit-xxlarge;
+  padding-bottom: $uniunit-large;
+  @include mq(narrow) {
+    width: 95%;
+  }
+}
+.grid {
+  @include cf;
+  padding-bottom: $uniunit-xlarge;
+}
+.grid-item {
+  float: left;
+  width: 33.3333%;
+  padding: $uniunit $uniunit;
+  @include mq(small) {
+    width: 100%;
+    margin: 0;
+  }
+  h1 img {
+    border-radius: 100%;
+    display: block;
+    margin: $uniunit-small 0 $uniunit;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: $fontsize-large;
+    margin-bottom: 0;
+    color: $brandcol1;
+    font-weight: 500;
+  }
+  h2 {
+    color: $brandcol5;
+    margin: 0 0 $uniunit-small;
+  }
+  p {
+    font-size: $fontsize-small;
+    margin: 0 0 $uniunit-small;
+  }
+  .grid-link-wrap {
+    @include aspect-ratio(1,1);
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    border: 5px solid $brandcol2;
+    border-radius: 100%;
+    @include trans-ease;
+
+  }
+  .grid-link-wrap:hover {
+    transform: scale(1.15);
+  }
+  a img {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    left: 20%;
+  }
+}
+.grid-item:nth-of-type(3n+4) {
+  clear: left;
+}
+.grid-item.left {
+  padding-left: 0;
+  // min-height: 575px;
+}
+.grid-50 {
+  .grid-item {
+    width: 50%;
+    @include mq(small) {
+      width: 100%;
+      margin-bottom: $uniunit;
+    }
+  &:nth-of-type(3n+4) {
+    clear: none;
+  }
+  &:nth-of-type(odd) {
+    clear: left;
+  }
+    img {
+      max-height: 100%;
+      max-width: 128px;
+      margin: $uniunit 0;
+      border-radius: 0;
+    }
+    &.inline {
+      h1 img {
+        float: left;
+        margin: 0 $uniunit-small 0 0;
+        max-width: 60px;
+        max-height: 60px;
+        @include mq(small) {
+          margin-bottom: $uniunit-small;
+        }
+      }
+      p {
+        clear: left;
+        margin-top: $uniunit;
+      }
+    }
+
+  }
+}

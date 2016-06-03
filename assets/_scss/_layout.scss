@@ -1,0 +1,139 @@
+// LAYOUT
+.wrap, [class*="-wrap"] {
+  max-width: $maxwidth-site;
+  margin: 0 auto;
+  @include cf;
+  padding: 0;
+  @include mq(medium) {
+    margin: inherit $uniunit !important;
+    max-width: 95%;
+  }
+  @include mq(small) {
+
+  }
+  @include mq(narrow) {
+
+  }
+}
+.columns {
+  max-width: $maxwidth-site;
+  margin: 0 auto;
+  @include cf;
+}
+.columns-col75 {
+  width: 75%;
+}
+.columns-col66 {
+  width: 66.666%;
+}
+.columns-col60 {
+  width: 60%;
+}
+.columns-col50 {
+  width: 50%;
+  @include mq(small) {
+    width: 100%;
+  }
+}
+.columns-col40 {
+  width: 40%;
+}
+.columns-col33 {
+  width: 33.333%
+}
+.columns-col25 {
+  width: 25%;
+}
+[class*="columns-col"] {
+  float: left;
+  padding: 0 75px 0 0;
+  box-sizing: border-box;
+  @include mq(small) {
+    padding-right: 0;
+  }
+}
+[class*="columns-col"]:last-child {
+  padding: 0 0 0 25px;
+  @include mq(small) {
+    padding-left: 0;
+  }
+}
+.columns-col100:last-child {
+  padding-left: 0;
+  @include mq(small) {
+    padding: 0 $uniunit-small;
+  }
+}
+.columns-col100 {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+  float: none;
+  @include mq(medium) {
+    // @include show(red);
+  }
+  @include mq(small) {
+    // @include show(blue);
+    width: 100%;
+  }
+  @include mq(narrow) {
+    h1,h2,h3,h4,h5,h6,p,ul,ol,figure,table {
+      // padding: 0 $uniunit-small;
+    }
+  }
+}
+// LAYOUT ELEMENTS
+header, nav, section, article, aside, footer {
+  padding: $uniunit;
+}
+header {
+}
+nav {
+  li {
+    display: inline-block;
+    padding: $uniunit-small;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+section {
+
+}
+article {
+
+}
+aside {
+
+}
+footer {
+
+}
+
+// INLINE ELEMENTS
+a:link, a:visited {
+  color: $brandcol7;
+}
+a:hover, a:active {
+  color: lighten($brandcol7, 20%);
+  text-decoration: underline;
+}
+
+// STICKY FOOTER
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+.footer-wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}

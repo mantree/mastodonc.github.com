@@ -1,0 +1,89 @@
+/* Base */
+
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  // margin: 0; <--- Cancelled to allow sticky footer to work
+  padding: 0;
+  font-family: $font;
+  font-size: $fontsize-normal;
+  line-height: $lh-normal;
+  color: $black;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+li {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+
+  text-rendering: optimizeLegibility;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a,
+button {
+  transition: .3s;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  font: inherit;
+  cursor: pointer;
+  letter-spacing: inherit;
+  border: 0;
+  background: none;
+
+  -webkit-font-smoothing: inherit;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}

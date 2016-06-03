@@ -1,0 +1,21 @@
+ // header
+.header-wrap {
+  background-color: white;
+}
+header {
+  display: table;
+  position: relative;
+}
+
+.header-titles {
+  display: table-cell;
+  min-width: 250px;
+}
+.header-title-sub {
+  font-weight: 500;
+  color: $brandcol4;
+  font-family: $font;
+  font-size: $fontsize-small;
+  text-transform: inherit;
+  text-transform: full-width;
+}

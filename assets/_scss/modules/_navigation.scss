@@ -1,0 +1,129 @@
+.header-nav-main--sub {
+  display: none;
+  @include mq(small) {
+    display: block;
+    position: static;
+    text-transform: uppercase;
+  }
+}
+.header-nav {
+  display: table;
+  text-align: right;
+  padding-top: $uniunit-large;
+  @include mq(small) {
+    display: block;
+    padding-top: 0;
+
+  }
+}
+.header-nav-main {
+  display: block;
+  position: relative;
+  @include mq(small) {
+    display: none;
+  }
+  li {
+    display: inline-block;
+    white-space: nowrap;
+    @include mq(medium) {
+      padding: $uniunit-xsmall;
+      font-size: $fontsize-small;
+    }
+  }
+}
+.header-nav-main > li > a {
+  font-size: $fontsize-small;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $brandcol5;
+  &:hover {
+    color: $brandcol1;
+  }
+}
+.header-nav-main > li:hover {
+  .header-nav-main--sub {
+    display: block;
+    position: absolute;
+    text-align: left;
+    border: 1px solid $brandcol2;
+    @include mq(small) {
+      position: static;
+      border: none;
+      text-align: center;
+    }
+  }
+  li {
+    display: block;
+    clear: both;
+    background-color: white;
+    @include mq(small) {
+      background-color: transparent;
+    }
+  }
+  li > a {
+    display: block;
+    @include mq(small) {
+      text-transform: uppercase;
+    }
+  }
+}
+.active:link, .active:visited {
+  color: $brandcol1;
+  border-bottom: 3px solid $brandcol1;
+  @include mq(small) {
+    border-bottom: none;
+    color: $brandcol8;
+  }
+}
+a.products {
+  position: relative;
+  padding-right: 16px;
+  &:link, &:visited, &:hover, &:active {
+    @include mq(small) {
+      padding-right: 0;
+      color: transparentize(white, 0.5);
+      border-bottom: 2px solid transparentize(white, 0.5);
+    }
+
+  }
+}
+a.products:after {
+  width: 9px;
+  height: 10px;
+  top: 7px;
+  // display: block;
+  position: absolute;
+  right: 0;
+  background: transparent url(../images/icon-dropdown.svg) 0 0 no-repeat;
+  content: " ";
+  @include mq(small) {
+    display: none;
+  }
+}
+.menu {
+  display: none;
+  @include mq(small) {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    button {
+      width: 40px;
+      height: 40px;
+      text-indent: -2000px;
+      overflow: hidden;
+      background: transparent url(../images/icon-menu.svg) 0 0 no-repeat;
+      background-size: cover;
+    }
+  }
+  @include mq(narrow) {
+    right: 20px;
+    top: 40px;
+    button {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+}

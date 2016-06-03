@@ -1,0 +1,42 @@
+---
+exclude: true
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html nav=site.data.nav %}
+
+    <section class="wrap">
+      <div class="columns content">
+        <article class="columns-col100 post" itemscope itemtype="http://schema.org/BlogPosting">
+          <h1 class="pagetitle post-title" itemprop="name headline">{{ page.title }}</h1>
+          <p class="post-meta author">
+            {% assign author = site.data.people[page.author] %}
+              <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                <span itemprop="name">
+                  {{ author.name }}
+                </span>
+              </span>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+          </p>
+
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_sharing_toolbox-wrap">
+              <p><strong>Share this article</strong></p>
+              <div class="addthis_sharing_toolbox"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    {% include signup.html %}
+    {% include footer.html %}
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-504c43cb6a02fe6c"></script>
+  </body>
+</html>

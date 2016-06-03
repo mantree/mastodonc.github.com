@@ -1,0 +1,85 @@
+// Signup form
+.home .signup-wrap {
+  margin-top: calc(#{$uniunit} * -3);
+}
+.signup-wrap {
+  text-align: center;
+  margin-top: $uniunit-xlarge;
+  padding-top: $uniunit-xlarge;
+  @include mq(small) {
+    padding-top: $uniunit-small;
+  }
+  background-color: $brandcol4;
+  .section-title {
+    text-align: center;
+    color: white;
+    margin: $uniunit-large 0 0;
+    @include mq(small) {
+      margin: $uniunit-small 0 0;
+    }
+  }
+  > p {
+    @include mq(narrow) {
+      margin: $uniunit;
+    }
+  }
+}
+.home .signup-wrap {
+  padding-top: 0;
+}
+.signup {
+  text-align: left;
+  width: 50%;
+  max-width: $maxwidth-site;
+  padding: $uniunit-small;
+  margin: $uniunit-large auto $uniunit-xxlarge;
+  background-color: $brandcol2;
+  @include mq(narrow) {
+    width: 90%;
+  }
+}
+.signup p {
+  margin: $uniunit;
+
+  label {
+    display: block;
+    margin: 0 0 $uniunit-small;
+    font-weight: 700;
+    color: white;
+    font-size: $fontsize-normal;
+  }
+  [type="text"], [type="email"] {
+    display: block;
+    width: 100%;
+    font-size: $fontsize-normal;
+    font-family: $font;
+    min-height: 60pt;
+    padding: $uniunit;
+    border: none;
+    color: $brandcol4;
+    @include mq(narrow) {
+      padding: $uniunit-xsmall $uniunit-small;
+    }
+  }
+  [type="submit"] {
+    font-size: $fontsize-normal;
+    font-family: $font;
+    font-weight: 700;
+    min-height: 60pt;
+    padding: $uniunit;
+    border: none;
+    color: $brandcol4;
+    background-color: $brandcol3;
+    cursor: pointer;
+    @include trans-ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+    @include mq(narrow) {
+      width: 100%;
+    }
+  }
+}
+.signup-submit {
+text-align: right;
+}

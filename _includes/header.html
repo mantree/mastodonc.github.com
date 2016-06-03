@@ -1,0 +1,31 @@
+<div class="header-wrap">
+  <header>
+    <div class="header-titles">
+      <h1 class="header-title"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/assets/images/logo_mastodonc.png" alt="Mastodon C" /></a></h1>
+      <h2 class="header-title-sub">Big data products and consultancy</h2>
+    </div>
+    <p class="menu"><button id="trigger-overlay" type="button">Open Overlay</button></p>
+    <div class="overlay overlay-slidedown">
+      <button type="button" class="overlay-close">Close</button>
+      <nav class="header-nav">
+        <ul class="header-nav-main">
+          <li><a href="#" class="products">Products</a>
+            <ul class="header-nav-main--sub">
+              {% for product in site.products %}
+              <li><a href="{{ site.baseurl }}{{ product.url }}">{{ product.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+          {% assign navurl = page.url | remove: 'index.html' %}
+          {% for item in include.nav %}
+              <li>
+                  <a {% if item.url == navurl %} class="active"{% endif %} href="{{ item.url | prepend: site.baseurl  }}">
+                    {{ item.text }}
+                  </a>
+              </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>

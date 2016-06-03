@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Mastodon C
+email: theteam@mastodonc.com
+description: > # this means to ignore newlines until "baseurl:"
+  Mastodon C are agile big data specialists. We offer the open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure.
+baseurl: "/mastodonc_website" # the subpath of your site, e.g. /blog
+url: "0.0.0.0" # the base hostname & protocol for your site
+twitter_username: MastodonC
+github_username:  MastodonC
+
+# Build settings
+markdown: kramdown
+future: true
+excerpt_separator: <!--more-->
+gems: [jekyll-paginate, jekyll-gist]
+paginate: 10
+paginate_path: "/blog/page:num"
+
+# SASS directory
+sass:
+  sass_dir: /assets/_scss
+
+# Collections
+collections:
+  casestudies:
+    output: true
+    permalink: /casestudies/:path/
+  products:
+    output: true
+    permalink: /products/:path/

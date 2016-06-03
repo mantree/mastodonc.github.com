@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html nav=site.data.nav %}
+
+    <section class="wrap">
+      <div class="columns">
+        <div class="columns-col100">
+
+          {{ content }}
+
+        </div>
+      </div>
+    </section>
+
+    {% include signup.html %}
+    {% include footer.html %}
+  </body>
+</html>
