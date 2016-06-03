@@ -10,7 +10,7 @@ title: Mastodon C
 email: theteam@mastodonc.com
 description: > # this means to ignore newlines until "baseurl:"
   Mastodon C are agile big data specialists. We offer the open source technology platform and the skills to help you realise that potential, and we do it all on zero carbon infrastructure.
-baseurl: "/mastodonc_website" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "0.0.0.0" # the base hostname & protocol for your site
 twitter_username: MastodonC
 github_username:  MastodonC
