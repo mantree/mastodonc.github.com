@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: kixi
 title: kixi
 subtitle:  "Our open source data platform"
 download: product-kixi.pdf
