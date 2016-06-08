@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="product">
+    {% include header.html nav=site.data.nav %}
+
+    <!-- HERO -->
+    <section class="hero-wrap">
+      <div class="{{ page.title }} hero">
+        <h1 class="hero-title">{{ page.title }}</h1>
+      </div>
+    </section>
+    <h2>{{ page.subtitle }}</h2>
+
+    <!-- IN-PAGE NAV -->
+    <section class="nav-sub-wrap">
+      <nav class="nav-sub">
+        <ul class="nav-sub-list">
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#features">Features</a></li>
+          <!-- <li><a href="#faq">FAQ</a></li> -->
+          <li><a href="#factsheet">Factsheet</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="wrap">
+      <div class="columns content">
+        <div class="columns-col100">
+          <h2>Overview</h2>
+          <p class="intro">{{ page.overview }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="features-wrap">
+      <div class="columns">
+        <div class="columns-col100">
+          <h2 id="benefits">Benefits</h2>
+            <ul class="grid grid-50">
+              {% for benefit in page.benefits %}
+              <li class="grid-item left inline">
+                <h1><img src="{{ site.baseurl }}/assets/images/{{ benefit.image }}" alt="" />{{ benefit.title }}</h1>
+                <p>{{ benefit.content }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="parade-wrap">
+      <div class="columns">
+        <div class="columns-col100">
+          <h2 id="clients">{{ page.title }} case studies</h2>
+          <ul class="grid">
+            {% for x in site.casestudies %}
+            {% assign caseclient = x.client %}
+            {% if page.casestudy contains caseclient %}
+            <li class="grid-item">
+              <span class="grid-link-wrap">
+                <a class="ar-content" href="{{ x.url | prepend: site.baseurl }}">
+                  <img src="{{ site.baseurl }}/assets/images/{{ x.logo }}" alt="{{ x.subtitle }}" />
+                </a>
+              </span>
+            </li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="tech-wrap">
+      <div class="columns">
+        <div class="columns-col100">
+          <h2 id="features">Features</h2>
+            <ul class="grid grid-50">
+              {% for feature in page.features %}
+              <li class="grid-item left">
+                <h1>{{ feature.title }}</h1>
+                <p>{{ feature.content }}</p>
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="parade-wrap">
+    <div class="moreclients">
+      <h2>Other clients who use {{ page.title }}</h2>
+      <ul class="moreclients-list">
+        {% for x in site.casestudies %}
+        {% assign caseclient = x.client %}
+        {% if page.moreclients contains caseclient %}
+          <li class="moreclients-list-logo">
+                <img src="{{ site.baseurl }}/assets/images/{{ x.logo }}" alt="{{ x.subtitle }}" />
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    </section>
+    <!-- FAQ -->
+    <!-- <section class="wrap">
+      <div class="columns content">
+        <div class="columns-col100">
+          <h2 id="faq">Frequently asked questions</h2>
+          <dl class="faq">
+            {% for qa in site.data.faq %}
+            {% if qa.product contains page.title %}
+            <dt class="faq-q">{{ qa.question }}</dt>
+            <dd class="faq-a">{{ qa.answer }}</dt>
+              {% endif %}
+            {% endfor %}
+          </dl>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- DOWNLOAD -->
+    <section class="download-wrap">
+      <div class="columns">
+        <div class="columns-col100">
+          <h2 id="factsheet">{{ page.title }} factsheet</h2>
+          <p>Download the <span class="titlecase">{{ page.title }}</span> factsheet PDF.</p>
+
+          <ul class="action">
+            <li>
+              <div class="ar-content">
+                <a href="{{ site.baseurl }}/assets/downloads/{{ page.download }}">
+                  <img src="{{ site.baseurl }}/assets/images/icon-download.svg" alt="Download factsheet" />
+                </a>
+              </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <a href="#contact"></a>
+    {% include contact.html %}
+    {% include signup.html %}
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,5 +1,5 @@
 ---
-layout: product
+layout: witan
 title: witan
 subtitle:  "Our city decision-making platform"
 download: product-witan.pdf
