@@ -11,7 +11,7 @@ moreclients:
   - nhs
   - tes
   - defra
-overview: "Our core open source data platform, Kixi, uses Hadoop, Cassandra and other open source technologies to ingest and integrate batch and real time data to a single repository, to aggregate, model, or analyse it, and to serve it back to your database or web interface in a way that serves your business needs. We can output big data to a variety of outputs to support further analysis."
+overview: "Our core open source data platform, Kixi, uses Hadoop, Cassandra and other open source technologies to ingest and integrate batch and real time data to a single repository, to aggregate, model, or analyse it, and to serve it back to your database or web interface in a way that serves your business needs. We can send big data to a variety of output formats to support further analysis."
 
 benefits:
   - title: "Cutting edge technology"
