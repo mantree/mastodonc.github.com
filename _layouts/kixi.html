@@ -70,7 +70,15 @@
               </span>
             </li>
             {% endif %}
-          {% endfor %}
+            {% endfor %}
+            <li class="grid-item">
+              <span class="grid-link-wrap">
+                <a class="ar-content" href="http://www.arup.com/">
+                  <img src="{{ site.baseurl }}/assets/images/logo-arup.png" alt="Arup" />
+                </a>
+              </span>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -93,21 +101,22 @@
       </div>
     </section>
 
-    <section class="parade-wrap">
-    <div class="moreclients">
-      <h2>Other clients who use {{ page.title }}</h2>
-      <ul class="moreclients-list">
-        {% for x in site.casestudies %}
-        {% assign caseclient = x.client %}
-        {% if page.moreclients contains caseclient %}
+    <!-- <section class="parade-wrap">
+      <div class="moreclients">
+        <h2>Other clients who use {{ page.title }}</h2>
+        <ul class="moreclients-list">
+          {% for x in site.casestudies %}
+          {% assign caseclient = x.client %}
+          {% if page.moreclients contains caseclient %}
           <li class="moreclients-list-logo">
-                <img src="{{ site.baseurl }}/assets/images/{{ x.logo }}" alt="{{ x.subtitle }}" />
+            <img src="{{ site.baseurl }}/assets/images/{{ x.logo }}" alt="{{ x.subtitle }}" />
           </li>
           {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-    </section>
+          {% endfor %}
+        </ul>
+      </div>
+    </section> -->
+
     <!-- FAQ -->
     <!-- <section class="wrap">
       <div class="columns content">
