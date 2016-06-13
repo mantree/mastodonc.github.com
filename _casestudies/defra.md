@@ -19,9 +19,6 @@ Monitoring and identifying emerging threats to animal health from all of these s
 
 Therefore APHA are keen to take advantage of new open source technologies which enable experts to focus their attention on likely areas of new patterns or issues, by using both analytical methods (for example text mining) and data visualisation techniques, to get a new view on their data.
 
-> <p>Variation in prescribing habits costs the NHS millions of pounds a year. Transparent sharing of information will help clinicians understand whether they are over or under prescribing. This will focus minds in a way that will not only improve the quality of treatment for patients but also reduce cost and free up money for re-investment in other parts of the NHS.</p>
-><cite>Sir Bruce Keogh, Medical Director of the NHS Commissioning Board</cite>
-
 ### What we did
 We created a prototype system using Spark which automatically detected 'topics' in post mortems, and created automated alerts when there was a sudden spike either in text topics or in other quantifiable data such as counts of animal abortions in a region. We also showed how to visualise this complex data in a way which was user-friendly for experts to use day-to-day, to help focus their attention on problem areas.
 
