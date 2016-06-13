@@ -43,4 +43,4 @@ The infrastructure allows our client to join data inputs that weren’t previous
 
 The result of this insight has been a 360% increase in usage of their targeting products for improving campaign performance
 
-It has also enabled true ‘big data’ analysis using matlab to analyse granular data points such as fraudulent IP addresses – this has allowed our client to reduce the amount of fraudulent behaviour they see more than tenfold.
+It has also enabled true ‘big data’ analysis using MATLAB to analyse granular data points such as fraudulent IP addresses – this has allowed our client to reduce the amount of fraudulent behaviour they see more than tenfold.
