@@ -15,9 +15,10 @@ TES Global had previously outsourced much of the rankings production; they wishe
 
 ## Our approach
 Working from existing documentation from a previous outsourced vendor, we worked alongside the TES in-house team to:
-- Understand the old rankings methodology, which used a number of complex analytical and statistical steps
-- Develop new tests and checks to ensure that, as the data sources grow and change and data becomes more complex, the rankings produced are accurate, consistent with previous years, and fair
-- Develop a data storage and processing approach which is simple, performant, and allows very clear understanding of data versioning and adjustments performed along the way - this is critical to allow future audit and understanding of where numbers come from
+
+  - Understand the old rankings methodology, which used a number of complex analytical and statistical steps
+  - Develop new tests and checks to ensure that, as the data sources grow and change and data becomes more complex, the rankings produced are accurate, consistent with previous years, and fair
+  - Develop a data storage and processing approach which is simple, performant, and allows very clear understanding of data versioning and adjustments performed along the way - this is critical to allow future audit and understanding of where numbers come from
 
 We developed a set of Clojure scripts, backed by a cloud-based JSON data store, and accessed via a simple command-line interface, to enable analysts to run ranking variants and output results files and audit reports quickly, easily, and repeatably.
 
