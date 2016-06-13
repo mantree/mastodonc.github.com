@@ -14,9 +14,6 @@ In order to hit environmental targets, UK buildings need to become dramatically 
 
 In order to learn more about what works, the Energy Saving Trust and their partners monitor retrofit schemes and trial new building approaches and technologies. They want to understand in fine detail how these technologies perform, at different times of day, with different occupancy levels, and in different weather conditions.
 
-> Variation in prescribing habits costs the NHS millions of pounds a year. Transparent sharing of information will help clinicians understand whether they > are over or under prescribing. This will focus minds in a way that will not only improve the quality of treatment for patients but also reduce cost and > free up money for re-investment in other parts of the NHS.
-<cite>Sir Bruce Keogh, Medical Director of the NHS Commissioning Board</cite>
-
 ## What We Did
 To allow EST to make sense of these trials, we built and now operate and support our Hecuba system, which automatically accepts such trial data at 1 minute intervals, from a wide variety of sensors, and displays that data in a web-based interface which lets EST and its clients explore, graph, and calculate energy performance measures across a very wide and diverse range of indicators.
 
