@@ -19,6 +19,5 @@ Once clients have a clear picture of their business need and the raw data which 
 ### Live data insight systems
 Once we've proven the impact of a solution, we’re able to move to a managed service, where we continue to run and improve a live data system which addresses our clients’ needs, based on our common core Kixi platform. This gives our clients a reliable and predictable service where data is ingested and analysed according to their needs, while still giving them the freedom to develop or alter their requirements over time.
 
-
-><p>They're very skilled in project management and have our stakeholders excited about the new system.</p>
-> <cite>John Johnson, Director, NoData</cite>
+><p>Mastodon C have the excellent qualities of talking comprehensibly while absolutely knowing the deep technical detail; they are not too large and not too corporate, relaxed and friendly and we found that they suited our style very well .</p>
+><cite>CDO of a FTSE 250 company</cite>

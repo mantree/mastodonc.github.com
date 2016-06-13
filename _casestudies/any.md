@@ -19,28 +19,29 @@ The system uses Hadoop and other open source technologies, to reliably and effic
 
 ## Our approach
 This project embodied three key elements of our approach:
-- The architecture and code are transparent to the client, meaning that the client retains control and is not tied to a particular approach or vendor in future.
-- Commodity hardware in the cloud and standard open source software is used for infrastructure. The Mastodon C platform code (Kixi) is also available under an open source software license; the value that we add is in building, customising, and managing a system to the client’s specific needs.
-- Uniquely, we combine a deep understanding of both practical Hadoop cloud architectures and advanced analytics, ensuring that systems both function effectively and provide real business insight.
+
+  - The architecture and code are transparent to the client, meaning that the client retains control and is not tied to a particular approach or vendor in future.
+  - Commodity hardware in the cloud and standard open source software is used for infrastructure. The Mastodon C platform code (Kixi) is also available under an open source software license; the value that we add is in building, customising, and managing a system to the client’s specific needs.
+  - Uniquely, we combine a deep understanding of both practical Hadoop cloud architectures and advanced analytics, ensuring that systems both function effectively and provide real business insight.
 
 ## By the numbers
 The system contains:
 
-- 12 TB (over 106 billion datapoints in total) of compressed data stored
-- Over 70 GB of data added daily from 18 sources via 5 different data vendors via various https web services and files via sftp
-- Runs very efficiently: only one ETL server, and 8 database servers at peak times
+  - 12 TB (over 106 billion datapoints in total) of compressed data stored
+  - Over 70 GB of data added daily from 18 sources via 5 different data vendors via various https web services and files via sftp
+  - Runs very efficiently: only one ETL server, and 8 database servers at peak times
 
 ## Ongoing support
 Having built the original system, we also operate the system day to day, including:
 
-- Ongoing platform maintenance and on-call support
-- Cloud server usage management
-- Data quality checks and alerts, so that the client is immediately aware of any issue with incoming raw data
-- Two developer days per month for ongoing smaller tweaks and additions as requested
+  - Ongoing platform maintenance and on-call support
+  - Cloud server usage management
+  - Data quality checks and alerts, so that the client is immediately aware of any issue with incoming raw data
+  - Two developer days per month for ongoing smaller tweaks and additions as requested
 
 ## Business impact
 The infrastructure allows our client to join data inputs that weren’t previously joined, then roll this up to make big data small again. This means that they are seeing new trends that they didn’t see before, but are still able to pivot this information in Excel – where their analysts can extract most value from it.
 
 The result of this insight has been a 360% increase in usage of their targeting products for improving campaign performance
 
-It has also enabled true ‘big data’ analysis using matlab to analyse granular data points such as fraudulent IP addresses – this has allowed our client to reduce the amount of fraudulent behaviour they see more than tenfold.
+It has also enabled true ‘big data’ analysis using MATLAB to analyse granular data points such as fraudulent IP addresses – this has allowed our client to reduce the amount of fraudulent behaviour they see more than tenfold.
