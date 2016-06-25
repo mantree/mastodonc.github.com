@@ -6,7 +6,7 @@ fran:
     twitter: http://twitter.com/SunnyETownsend
     image: fran-bw.jpg
     profile: |
-      Francine spent a number of years working for search engines, helping them to turn data into money.<p>
+      Francine is an ex-Googler and recovering mathematician. She's a trustee at DataKind UK, board member at Bethnal Green Ventures, and advises the Cabinet Office on data science.<p>
       She likes coffee, running, sleeping a lot, and large data sets.
 bruce:
     name: Bruce Durling
@@ -15,7 +15,7 @@ bruce:
     twitter: http://twitter.com/otfrom
     image: bruce-bw.jpg
     profile: |
-      Bruce toiled for years writing bash and java for investment banking data systems.<p>
+      Bruce toiled for years writing bash and java for investment banking data systems. Now he likes clojure, big data, open source, and making Mastodon C a mean, lean, agile machine.<p>
       He loves using GNU emacs and finding volunteers for the London Clojurians.
 eleonore:
     name: Éléonore Mayola
