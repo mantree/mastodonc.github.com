@@ -2,7 +2,7 @@
 layout: content-feature
 title: Data Science
 subtitle: "Big data technology experts"
-lowdown: "We help organisations to understand and exploit their big data opportunities. We have developed technology solutions and platforms to identify and maximise the potential impact of data."
+lowdown: "We help organisations to understand and exploit their big data opportunities. We have developed technology solutions and platforms to identify and maximise the impact of data."
 bgimage: bg-consultancy.jpg
 permalink: /data_science/
 weight: 1
