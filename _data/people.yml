@@ -89,6 +89,15 @@ seb:
     profile: |
       Seb studied as a biologist. He now applies skills he developed analysing genes to data science.<p>
       He enjoys baking bread, playing guitar and retro video gaming.
+tomc:
+    name: Tom Coupland
+    position: Data Scientist
+    email:
+    twitter:
+    image: tomc-bw.jpg
+    profile: |
+      Tom has spent years growing large data systems, carefully tending to both the flow and reservoirs of information, using a potent cocktail of deep technical knowledge, relentless inquisitiveness and sheer determination to make it work.<p>
+      When not tending to the system of day, he likes to read, watch and occasionally write science fiction, before going outside and runing around the mountains in the wind and rain to let it all sink in.
 chrish:
     name: Chris Hall
     position: Strategic Advisor
