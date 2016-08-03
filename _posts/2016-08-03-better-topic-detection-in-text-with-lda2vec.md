@@ -13,7 +13,7 @@ One of the most common needs is topic recognition. Companies having a large body
 
 As with most machine learning you can choose an unsupervised or supervised approach. Unsupervised means you let the algorithm round up the topics for you instead of presetting them yourself. Unsupervised is usually a good initial approach, as it’s not always clear which topics can be expected.
 
-This post from here onwards gets into lots of geeky detail about a new-ish technique called word2vec - dive in if you're feeling brave...
+This post from here onwards gets into lots of geeky detail about a new-ish technique called lda2vec - dive in if you're feeling brave...
 
 ## What sort of ML is this?
 
@@ -73,7 +73,7 @@ As an interesting aside: Google has the software patent for this technique, but 
 
 ## Lda2vec
 
-Lda2vec is a research project by Chris E. Moody, PhD at Caltech.  Lda2vec’s aim is to find topics while also learning word vectors to obtain sparser topic vectors that are easier to interpret, while also training the other words of the topic in the same vector space (using neighbouring words).
+<a href="https://github.com/cemoody/lda2vec">Lda2vec</a> is a research project by Chris E. Moody, PhD at Caltech.  Lda2vec’s aim is to find topics while also learning word vectors to obtain sparser topic vectors that are easier to interpret, while also training the other words of the topic in the same vector space (using neighbouring words).
 
 This is achieved by changing the objective function of skip-gram negative sampling we described in previous paragraph to add document feature vectors in the mix. The intuition here is that a word is enriched by the knowledge of the document it’s embedded in: if a document is about airlines, Germany might be close to Lufthansa, while another document might evoke other associations.
 
@@ -100,6 +100,6 @@ This technique was used on a corpus of bulletin board messages, and on Hacker Ne
 
 This is a research project – exceptionally, it has really decent open source code in Python which is rare for research papers (props to Chris Moody). The technique looks promising, and intuitively makes sense, and the results look exciting.
 
-Running time: on a high-spec laptop it takes multiple-days-scale scale durations to run the bulletin board example (11312 documents, 3.4GB, 20 topics) – this may be shorter when using the CUDA optimizations he uses.
+Running time: on a high-spec laptop it takes multiple-days-scale scale durations to run the bulletin board example (11312 documents, 3.4GB, 20 topics) – this may be shorter when using the CUDA optimizations he uses and there's definitely room to parallellize the calculations to obtain better running times.
 
 In short, this is definitely one to watch.
