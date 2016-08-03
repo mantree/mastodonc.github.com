@@ -6,9 +6,8 @@ author: elise
 comments: true
 categories: [data science, technology, geeky]
 ---
-At Mastodon C we're always keeping an eye out for new libraries or data science techniques which might help us make our models faster or smarter.
-
-We very often need to work with large collections of text documents for our clients - all sorts of very useful insights can be extracted from the unstructured material that gets collected all the time in reports, notes, emails, or support tickets, as long as we can figure out how to put it to work.
+At Mastodon C we're always keeping an eye out for new libraries or data science techniques which might help us make our models faster or smarter. We very often need to work with large collections of text documents for our clients - all sorts of very useful insights can be extracted from the unstructured material that gets collected all the time in reports, notes, emails, or support tickets, as long as we can figure out how to put it to work.
+<!--more-->
 
 One of the most common needs is topic recognition. Companies having a large body of documents want to classify each document as covering a certain number of topics, with some quantitative measure of how important that topic is. This could be for market analysis, such as social media, or for a good overview and classification of their own document stores.
 
