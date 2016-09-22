@@ -11,7 +11,10 @@ categories: [Uncategorized]
 
 Since there is so much that could be done in this field, and so many possible ways to do it, there are some tough choices for us to make, to ensure that the platform works and is widely adopted, both in London and in other world cities.
 
-[caption id="attachment_366" align="alignnone" width="660"]<a href="https://mastodonc.files.wordpress.com/2015/09/simple-process.png"><img class="size-large wp-image-366" src="https://mastodonc.files.wordpress.com/2015/09/simple-process.png?w=660" alt="Oh, if only." width="660" height="372" /></a> Oh, if only.[/caption]
+<figure>
+<a href="https://mastodonc.files.wordpress.com/2015/09/simple-process.png"><img class="size-large wp-image-366" src="https://mastodonc.files.wordpress.com/2015/09/simple-process.png?w=660" alt="Oh, if only." width="660" height="372" /></a>
+<figcaption>Oh, if only.</figcaption>
+</figure>
 
 <span style="font-weight:400;">We wish that new product development was predictable - a straight line from seeing a user need, to building a tool which meets that need, then selling it to lots of other similar users. Unfortunately, it’s rarely that simple or predictable. </span>
 
@@ -39,7 +42,12 @@ Since there is so much that could be done in this field, and so many possible wa
 
 Inside Mastodon C, we've been working in weekly iterations for a while: each week we demo what we've made, and then we plan what we'll do the following week. One key thing we're trying now, is using the mental model above to decide what activities in our 'toolbox' are most appropriate for that week.
 
-[caption id="attachment_369" align="alignnone" width="660"]<a href="https://mastodonc.files.wordpress.com/2015/09/earlier-tool-selection.png"><img class="size-large wp-image-369" src="https://mastodonc.files.wordpress.com/2015/09/earlier-tool-selection.png?w=660" alt="Early on – when our focus is discovery" width="660" height="372" /></a> Early on – when our focus is discovery[/caption]
+
+<figure>
+<a href="https://mastodonc.files.wordpress.com/2015/09/earlier-tool-selection.png"><img class="size-large wp-image-369" src="https://mastodonc.files.wordpress.com/2015/09/earlier-tool-selection.png?w=660" alt="Early on – when our focus is discovery" width="660" height="372" /></a> 
+<figcaption>Early on – when our focus is discovery<figcaption>
+</figure>
+
 
 <em>Early on - when our focus is discovery</em>
 
@@ -49,8 +57,10 @@ Early on in the project, most of our time is spent generating ideas, and explor
 
 <em>A</em>s we learn more, we’ll move more of our efforts to activities in the middle, where we're validating our understanding of user's needs, and see how they currently try to solve their problems themselves. It's not uncommon for some of our team to focus on activities on the left after discovering something new, while the rest focus on the middle, on problems that we have a better understanding of. Again, we share what we learn each week in a show-and-tell like session, (<a href="http://blog.mastodonc.com/2013/09/03/what-and-why-is-democake/">but with added cake</a>).
 
-[caption id="attachment_371" align="alignnone" width="660"]<a href="https://mastodonc.files.wordpress.com/2015/09/testing-html-and-production-code.png"><img class="size-large wp-image-371" src="https://mastodonc.files.wordpress.com/2015/09/testing-html-and-production-code.png?w=660" alt="Testing out a solution to a problem we feel we understand" width="660" height="372" /></a> Testing out a solution to a problem we feel we understand[/caption]
-
+<figure>
+<a href="https://mastodonc.files.wordpress.com/2015/09/testing-html-and-production-code.png"><img class="size-large wp-image-371" src="https://mastodonc.files.wordpress.com/2015/09/testing-html-and-production-code.png?w=660" alt="Testing out a solution to a problem we feel we understand" width="660" height="372" /></a> 
+<figcaption>Testing out a solution to a problem we feel we understand</figcaption>
+</figure>
 Later on, when we're confident we understand enough of the problem to build a solution to it, we're likely to be spending most of our time on activities on the right.
 
 That is, until we discover something interesting enough to warrant spending some time using tools from the left hand side of our toolbox again. In some cases, we might discover a killer new feature that makes sense to add to what we have built already.
