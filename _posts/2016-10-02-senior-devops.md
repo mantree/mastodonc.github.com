@@ -64,11 +64,11 @@ We're a team of 11 people, with 8 of us working mostly on the tech side of thing
 
 You can see what we’ve built before in the following locations:
 
-- Witan: https://witan-alpha.mastodonc.com
-- Hecuba/getembed: https://www.getembed.com
-- Almost all of our code: https://github.com/MastodonC
+- [Witan](https://witan-alpha.mastodonc.com)
+- [Hecuba/getembed](https://www.getembed.com)
+- Almost all of our code on [github](https://github.com/MastodonC)
 
-You can find out more about us on our website http://www.mastodonc.com and on Twitter at @MastodonC.
+You can find out more about us on our [website](http://www.mastodonc.com) and on Twitter at [@MastodonC](https://twitter.com/MastodonC).
 
 ## How to apply
 
