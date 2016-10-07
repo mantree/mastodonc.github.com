@@ -1,17 +1,23 @@
-# Breaking down silos around demographic data and models - experience of a city’s local authorities
-
+---
+layout: post
+title: Breaking down silos around demographic data and models - experience of a city’s local authorities
+date: 2016-10-07 12:00
+author: sunny
+comments: true
+categories: [bsps, demography, talks, videos]
+---
 Earlier this year we built a web-based interface for London’s local authorities (known as ‘boroughs’) to run their own population projections. Six months on we review their experience.
 <!--more-->
 
 ## The scene
-School rolls projections are used by London boroughs to apply for critical funding to support the building of new schools. 
+School rolls projections are used by London boroughs to apply for critical funding to support the building of new schools.
 
 Each borough has unique demands because each has a different population profile due to differences in migration, ethnicity, affluence, housing development etc. While some boroughs work closely with the Greater London Authority (GLA) to generate bespoke projections that best reflect their borough’s circumstances, others have little interaction and rely on the GLA to make decisions around data and model configuration inputs.
 
 ## What we did
-We worked with the GLA to provide the London boroughs with a way to run their own population projections. 
+We worked with the GLA to provide the London boroughs with a way to run their own population projections.
 
-The projections are based on housing development assumptions, use the GLA’s demographic models and run on Mastodon C’s platform Witan. We worked closely with the GLA to meet their requirements that the software was self-service, robust and customisable. 
+The projections are based on housing development assumptions, use the GLA’s demographic models and run on Mastodon C’s platform Witan. We worked closely with the GLA to meet their requirements that the software was self-service, robust and customisable.
 
 Providing the model through Witan has led to 3 fundamental changes to how the boroughs engage in the population projection process:
 
