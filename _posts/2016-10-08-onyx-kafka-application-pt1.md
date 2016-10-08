@@ -1,7 +1,15 @@
-Over the past couple of months I’ve been using the Onyx Platform with Mastodon C an awful lot. 
+---
+layout: post
+title: Creating an Onyx and Kafka Application pt 1
+date: 2016-10-08 12:00
+author: jasebell
+comments: true
+categories: [onyx, kafka]
+---
+Over the past couple of months I’ve been using the Onyx Platform with Mastodon C an awful lot.
 
 So this short series I'm going to show you how to build a Onyx Kafka application that consumes a Kafka stream and kicks out the messages to the console. Nothing flashy but more a “here’s the concepts”.
-
+<!--more-->
 In part 1 I’m going to look at getting the Onyx template working and using the Onyx Dashboard. Part 2, and possibly beyond, I’ll then add the Kafka connection and consume from a topic.
 
 ## Your Shopping List
@@ -10,7 +18,7 @@ We’ll look at the Onyx things via git so there’s nothing to download. You wi
 
 For Kafka 0.8.x (Currently 0.8.2.2) http://kafka.apache.org/downloads.html then you will require the [onyx-kafka-0.8 plugin](https://github.com/onyx-platform/onyx-kafka-0.8), for version 0.9.x then you need the [onyx-kafka](https://github.com/onyx-platform/onyx-kafka) plugin. If you are looking to deploy your Onyx/Kafka system to a Marathon/DCOS setup then I advise you to go for version 0.9.x as that's what DCOS will give you in the `--package-versions` from the cli install.
 
-For the rest of this tutorial I'm going to assume a standalone version of Kafka 0.8.2.2, using the supplied Zookeeper instance of 3.4.6. 
+For the rest of this tutorial I'm going to assume a standalone version of Kafka 0.8.2.2, using the supplied Zookeeper instance of 3.4.6.
 
 ## Onyx Dashboard
 
@@ -79,34 +87,36 @@ The template makes some assumptions, which you’d expect, so I’m going to edi
  :docker false}
  :onyx.log/config #profile {:default nil
  :docker {:level :info}}}}
- ```
- 
+```
+
 First of all I’m using my own Zookeeper instance (the one that comes with the Kafka download) so I’m not going to use the embedded one.
 
 ```
 :zookeeper/server? #profile {:default true
  :docker false}
- ```
- 
+```
+
 Now becomes:
 
 ```
 :zookeeper/server? #profile {:default false
  :docker false}
- ```
+```
+
 And the port will need changing too in both the env-config and peer-config blocks..
 
 ```
 :zookeeper/address #profile {:default "127.0.0.1:2188"
  :docker "zookeeper:2181"}
- ```
+```
+
 Now becomes:
 
 ```
 :zookeeper/address #profile {:default "127.0.0.1:2181"
  :docker "zookeeper:2181"}
- ```
- 
+```
+
 I have no need for a BookKeeper server to be running at this moment in time so that can be disabled too.
 
 ```
@@ -137,7 +147,7 @@ All built okay. The next step is to start everything up.
 
 ## Running the Application
 
-Before I start here’s something to clear up. Jobs are submitted to Zookeeper, they don’t require any peers running at the time, they do however require the node structure to exist within Zookeeper, meaning that if Onyx peers have never run before then the job will not deploy but rather throw an exception. 
+Before I start here’s something to clear up. Jobs are submitted to Zookeeper, they don’t require any peers running at the time, they do however require the node structure to exist within Zookeeper, meaning that if Onyx peers have never run before then the job will not deploy but rather throw an exception.
 
 When a peer is then started it will go to Zookeeper looking for jobs to run. And if it took my colleagues “a while for the penny to drop” well firstly there’s hope for me yet and secondly it may have been buried in the docs somewhere.
 
@@ -212,4 +222,3 @@ So we have a running job, you can also see the workflow of the job with it’s i
 ## In Part 2
 
 I’ll take this basic job and make it consume a Kafka topic and show the contents of the message load. I may even make it do something useful.
-
