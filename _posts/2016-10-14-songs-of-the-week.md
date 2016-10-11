@@ -33,3 +33,7 @@ Sunny rounded out the afternoon with The Lonond Gay Men's Chorus singing
 Sunny went with
 [MOH! KOUYATÉ - "Yéllé"](https://www.youtube.com/watch?v=ps23XEV_bpo)
 as SOTD.
+
+I then followed up
+with
+[Beyoncé - Hold Up](https://www.youtube.com/watch?v=PeonBmeFR8o).
