@@ -7,7 +7,7 @@ comments: true
 categories: [kixi, design, architecture]
 ---
 The Kixi platform is constructed around a design pattern known as Command Query Responsibility Separation (CQRS). This pattern is part of a hierarchy of designs that build upon one another and are generally used within a Micro-Services architecture.
-
+<!--more-->
 At the bottom of this hierarchy is the idea that decoupling the parts of a system that create actions from those that act upon them is valuable. At this level, we don’t have Events, we just have Messages whose purpose is, intentionally, ill-defined. This idea can be termed Message Passing. The power gained from this decoupling comes from the message queues and the inversion of control achieved when the consumer can control the rate of message processing. The pattern can also help the system scale horizontally, as message consumer instances can be added easily.
 
 We then ascend to the Event-Driven pattern. In essence, we are adding constraints to our Messages, describing them in more detail and making more use of them. Here we state that when any data is updated by a service it should create an Event describing what it has changed. This can be used for eventually consistent transactions, as services can communicate asynchronously about changes, eventually coming to a consensus on the state. The pattern can also make it easier to add certain types of features, notifications and audit logs are go to examples. When building new features you can use the events to drive or trigger their behaviour.
@@ -18,11 +18,11 @@ Finally, we make our way up to Command Query Responsibility Separation (CQRS). N
 
 These ideas and patterns grow in complexity as we add constraints and meaning upon our events. The application of these ideas is not simple and increases the complexity of working with the system, they also add to the operational burden. However, they do have some significant benefits:
 
-* Scaling. Event and Command processing can be easily scaled, horizontally, by just adding more instances of a given event processor. This can even be performed dynamically in response to load. This ability can also be used to help with events that require significant processing time.
-* Audit logging. This is practically a by-product of the architecture. It is always possible to trace the cause of a given action.
-* Debugging. If a problem occurs it is possible to replay the system and investigate the exact cause of the issue.
-* New query models. By having all data modifications in the events it is possible to create new models of the data to fulfil future feature requests. If a new data API needs to be supported, you can reingest all the data from the stream and store it in a bespoke format for that API.
-* Completely decoupled processes. The system naturally breaks down into small components, each dealing with a given event or small group of events. These are completely decoupled from each other. They can be moved into micro-services easily.
+- Scaling. Event and Command processing can be easily scaled, horizontally, by just adding more instances of a given event processor. This can even be performed dynamically in response to load. This ability can also be used to help with events that require significant processing time.
+- Audit logging. This is practically a by-product of the architecture. It is always possible to trace the cause of a given action.
+- Debugging. If a problem occurs it is possible to replay the system and investigate the exact cause of the issue.
+- New query models. By having all data modifications in the events it is possible to create new models of the data to fulfil future feature requests. If a new data API needs to be supported, you can reingest all the data from the stream and store it in a bespoke format for that API.
+- Completely decoupled processes. The system naturally breaks down into small components, each dealing with a given event or small group of events. These are completely decoupled from each other. They can be moved into micro-services easily.
 * Late feature addition. As the system grows additional features, encapsulated as new event types or novel processing of current events, are simple to add. This can allow many teams to contribute the system needing little coordination.
 
 The use of CQRS for the datastore and kixi can be thought of as a bet. We are betting that by laying the foundation of the system using this pattern we will get to take advantage of the benefits listed above, and those benefits will out weigh the cost over a time period we are happy with.
